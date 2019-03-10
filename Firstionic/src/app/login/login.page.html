@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+          <ion-label color="primary">UserId</ion-label>
+          <ion-input placeholder="User Id" [(ngModel)]="userid" name="userid"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" >Password</ion-label>
+            <ion-input type="password" placeholder="Password" [(ngModel)]="pwd" name="pwd"></ion-input>
+          </ion-item>
+    </ion-list>
+    <ion-button color="secondary" (click)="login()" class="ios" mode="ios">Login</ion-button> 
+  </ion-content>
+  
